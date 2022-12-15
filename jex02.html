@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="en">
+<meta charset="UTF-8">
+<head>
+<title>JavaScript Exercise02.</title>
+<link rel='stylesheet' href='form-style.css' type='text/css' />
+<script>
+function alphanumeric(inputtxt)
+{ 
+var letters = /^[0-9a-zA-Z]+$/;
+if(inputtxt.value.match(letters))
+{
+alert('Your registration number have accepted : you can try another');
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert('Please input alphanumeric characters only');
+return false;
+}
+}
+ function vowelOrConsonant(x)
+
+    {
+
+        if (x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u')
+
+            document.write("Vowel" + "</br>");
+
+        else
+
+            document.write("Consonant" + "</br>");
+
+    }
+
+       
+
+    vowelOrConsonant('c');
+
+      vowelOrConsonant('e');
+
+     
+
+
+</script>
+</head>
+<body>
+
+<form>
+			<fieldset>
+				<legend></legend>
+				<form>
+				<label for="character">
+				Character: <input 
+					type="text" 
+					id="string" 
+					name="character"
+					onblur="validate();"
+					>
+					
+				<br/>
+				<input type="button" value="Find" onclick="find();">
+				</form>
+			</fieldset>
+					
+</form>
+</div>
+</body>
+</html>

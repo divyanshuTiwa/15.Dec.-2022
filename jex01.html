@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+		<title>Java Script Exercise-01.</title>
+		
+		<script>
+			function validate() {
+				//console.log("Blurrrrrrrrrrrr");
+				
+				var num = document.getElementById("number").value;
+				
+				if(num.length > 0 ) {
+				
+					if(isNaN(num)) {
+						//console.log("You have entered a wrong input");
+						document.getElementById("error").innerText ="You must enter a number!";
+						document.getElementById("result").innerHTML = "";
+					}
+					else {
+						document.getElementById("error").innerText ="";
+					}
+				}
+				else {
+					document.getElementById("error").innerText ="You must enter a value!";
+							document.getElementById("result").innerHTML = "";
+					}
+					}
+					var n = prompt(“Enter a number to find odd or even”, “Type your number here”);
+	n = parseInt(n);
+	if (isNaN(n))
+	{
+	alert(“Please Enter a Number”);
+	}
+	else if (n == 0)
+	{
+	alert(“The number is zero”);
+	}
+	else if (n%2)
+	{
+	alert(“The number is odd”);
+	}
+	else
+{
+alert(“The number is even”);
+}
+		</script>
+<body>
+	<form>
+			<fieldset>
+				<legend></legend>
+				<form>
+				<label for="number">
+				Number: <input 
+					type="text" 
+					id="number" 
+					name="number"
+					onblur="validate();"
+					>
+					
+				<br/>
+				<input type="button" value="Find" onclick="find();">
+				</form>
+			</fieldset>
+		</form>
+					
+					
+</body>
+					
+</html>
